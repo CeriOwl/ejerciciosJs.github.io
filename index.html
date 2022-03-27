@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/pokeball.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Pokedex</title>
+</head>
+<body>
+    <div class="container container-fluid bg-light mt-3 mb-3 pt-3 pb-3">
+        <div class="d-flex justify-content-center align-items-center flex-wrap p-1 mb-3 fs-3">
+            <label for="text">Introduce el pokemon: </label>
+            <input class="ms-2" type="text" id="pokemon" placeholder="pikachu">
+            <input class="btn btn-outline-primary ms-2 fs-5" type="button" id="button" value="Buscar">
+        </div>
+        <div class="content" id="pokedex">
+            <div class="img-data" id="imgCard">
+                <div class="img" id="img"></div>
+                <div class="data-pokemon" id="nameNumber">
+                    <span id="number"></span>
+                    <span id="name"></span>
+                </div>
+            </div>
+            <div class="data">
+                <div class="bg-success bg-opacity-25 rounded-2 mb-3">
+                    <div class="title-type">
+                        <p>Tipo:</p>
+                    </div>
+                    <div class="tipos-data" id="tipos"></div>
+                </div>
+                <div class="stats bg-info bg-opacity-25 rounded-2 mb-3">
+                    <div class="title-stats">
+                        <p>Estadisticas</p>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <p>Vida: <span id="hp"></span></p>
+                            </div>
+                            <div class="col">
+                                <p>Ataque: <span id="attack"></span></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>Defensa: <span id="defense"></span></p>
+                            </div>
+                            <div class="col">
+                                <p>Ataque especial: <span id="sAttack"></span></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>Defensa especial: <span id="sDefense"></span></p>
+                            </div>
+                            <div class="col">
+                                <p>Velocidad: <span id="speed"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="moves bg-primary bg-opacity-25 rounded-2">
+                    <div class="title-moves">
+                        <p>Movimientos</p>
+                    </div>
+                    <div id="moves"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

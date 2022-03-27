@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "bit";
+    src: url("font/Pixeboy-z8XGD.ttf") format("truetype");
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div{
+    font-family: "bit";
+}
+.img-data{
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+img{
+    width: 400px;
+}
+.img{
+    display: flex;
+    justify-content: center;
+}
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+}
+.moves{
+    overflow: scroll;
+    max-height: 200px;
+}
+.title-moves, .title-stats, .title-type{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.data-pokemon{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-content{
+    display: flex;
+    flex-wrap: wrap;
+}
